@@ -106,10 +106,13 @@ public class PrincipalGUI extends JFrame {
 		JButton btnSobre = new JButton("Sobre");
 		btnSobre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane.showMessageDialog(null, "Parte 1 do projeto desenvolvido "
-						+ "por Lisandra Cruz, Gabriele Pessoa e Raissa Brizeno para "
-						+ "a cadeira de Fundamentos de Banco de dados. Ministrada "
-						+ "pela professora Roberta Macêdo. UFRPE. Obrigada! :)");
+				JOptionPane.showMessageDialog(null, 
+						"Parte 1 do projeto desenvolvido por Lisandra Cruz, Gabriele Pessoa \n"
+						+ "e Raissa Brizeno para a cadeira de Fundamentos de Banco de Dados. \n"
+						+ "Ministrada pela professora Roberta Macêdo. UFRPE. \n \n"
+						+ "Obrigada! :)",
+						"Sobre",
+						1);
 			}
 		});
 		btnSobre.setBounds(168, 313, 89, 23);
