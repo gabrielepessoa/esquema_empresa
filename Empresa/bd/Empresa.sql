@@ -127,11 +127,6 @@ alter table trabalha_em add constraint fk_trabalha_em_projeto foreign key (pno) 
 alter table projeto add constraint fk_projeto_departamento foreign key (dnum) references departamento(dnumero);
 alter table dependente add constraint fk_dependente_empregado foreign key (essn) references empregado(ssn);
 
-
-select e.pnome
-from empregado as e, dependente as d
-where e.ssn=d.essn;
-
 /* ATENÇÃO: 
 As restriçoes de integridade podem ser criadas juntamnte com as tabelas, mas quando existe FK pode dar erro, 
 por isso optou-se por inseri-las no final do script.
