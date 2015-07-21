@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
@@ -101,5 +102,17 @@ public class PrincipalGUI extends JFrame {
 		});
 		btnQuesto_1.setBounds(65, 260, 145, 23);
 		contentPane.add(btnQuesto_1);
+		
+		JButton btnSobre = new JButton("Sobre");
+		btnSobre.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showMessageDialog(null, "Parte 1 do projeto desenvolvido "
+						+ "por Lisandra Cruz, Gabriele Pessoa e Raissa Brizeno para "
+						+ "a cadeira de Fundamentos de Banco de dados. Ministrada "
+						+ "pela professora Roberta Macêdo. UFRPE. Obrigada! :)");
+			}
+		});
+		btnSobre.setBounds(168, 313, 89, 23);
+		contentPane.add(btnSobre);
 	}
 }
